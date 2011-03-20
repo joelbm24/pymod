@@ -3,9 +3,7 @@
 
 static PyObject * is_cool(PyObject *self, PyObject *args)
 {
-
-    std::cout << "Joel is cool\n";
-    return Py_None;
+    Py_BuildValue("s", "Joel is cool");
 }
 
 static PyMethodDef JoelMethods[] = {
